@@ -10182,9 +10182,9 @@ void CompilerGLSL::access_chain_internal_append_index(std::string &expr, uint32_
 		}
 	}
 
-	expr += "[";
+	expr += "[int(";
 	expr += idx_expr;
-	expr += "]";
+	expr += ")]";
 }
 
 bool CompilerGLSL::access_chain_needs_stage_io_builtin_translation(uint32_t)
